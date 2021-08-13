@@ -34,3 +34,6 @@ idades_no_ano_que_vem = [(idade + 1) for idade in idades]
 print(idades_no_ano_que_vem)
 idades_maior_21 = [idade for idade in idades if idade > 21]
 print(idades_maior_21)
+
+
+#Sempre tomar cuidado com lista e objetos que são mutáveis, aula 1 video 4
