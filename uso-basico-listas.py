@@ -37,3 +37,23 @@ print(idades_maior_21)
 
 
 #Sempre tomar cuidado com lista e objetos que são mutáveis, aula 1 video 4
+
+
+#AULA 2.2 - Listas com objetos de classes próprias
+class ContaCorrente:
+
+    def __init__(self, codigo):
+        self.codigo = codigo
+        self.saldo = 0
+
+    def deposita(self, valor):
+        self.saldo += valor
+
+    def __str__(self):
+        return f'[>>Código {self.codigo}, Saldo {self.saldo}<<]'
+
+conta_do_joao = ContaCorrente(15)
+print(conta_do_joao)
+
+conta_do_joao.deposita(500)
+print(conta_do_joao)
